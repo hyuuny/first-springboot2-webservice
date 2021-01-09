@@ -1,0 +1,2 @@
+com/setge/boot/springboot/HelloControllerTest.java
+ com.setge.boot.springboot.HelloControllerTest
