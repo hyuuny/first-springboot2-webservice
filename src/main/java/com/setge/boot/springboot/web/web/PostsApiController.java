@@ -1,6 +1,5 @@
 package com.setge.boot.springboot.web.web;
 
-import com.setge.boot.springboot.web.domain.posts.PostsRepository;
 import com.setge.boot.springboot.web.service.posts.PostsService;
 import com.setge.boot.springboot.web.web.dto.PostsResponseDto;
 import com.setge.boot.springboot.web.web.dto.PostsSaveRequestDto;
@@ -19,12 +18,12 @@ public class PostsApiController {
         return postsService.save(requestDto);
     }
 
-    @PutMapping("/api/v1/posts/{id}")
+    @PutMapping("/api/v1/posts/{id}") // 수정&조회
     public Long update(@PathVariable Long id, @RequestBody PostsUpdateRequestDto requestDto) {
         return postsService.update(id, requestDto);
     }
 
-    @GetMapping("/api/v1/posts/{id}") // 수정&조회
+    @GetMapping("/api/v1/posts/{id}") // 수정&조회 페이지
     public PostsResponseDto findById(@PathVariable Long id) {
         return postsService.findById(id);
     }
