@@ -154,4 +154,7 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+### oauth.properties ###
+application.oauth.properties
+
 # End of https://www.toptal.com/developers/gitignore/api/intellij,macos,gradle
