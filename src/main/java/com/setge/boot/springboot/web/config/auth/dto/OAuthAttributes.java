@@ -38,7 +38,7 @@ public class OAuthAttributes {
                                         .build();
     }
 
-    public User toEntity() { // User Entity 생성
+    public User toEntity() { // User Entity
         return User.builder()
                 .name(name)
                 .email(email)

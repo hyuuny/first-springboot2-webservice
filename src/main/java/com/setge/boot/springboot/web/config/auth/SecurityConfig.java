@@ -21,7 +21,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     * oauth2Login() : OAuth2 로그인 기능에 대한 여러 설정의 진입점이다.
     * userInfoEndporint() : OAuth2 로그인 성공 이후 사용자 정보를 가져올 때의 설정들을 담당한다.
     * userService : 소셜 로그인 성공 시 후속 조치를 진행할 UserService 인터페이스의 구현체를 등록한다.
-    *
     * */
     @Override
     protected void configure(HttpSecurity http) throws Exception{ // protected : 다른 패키지의 자손클래스에서 접근 가능

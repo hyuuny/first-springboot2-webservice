@@ -19,7 +19,7 @@
                     Logged in as : <span id="user">{{userName}}</span>
                     <a href="/logout" class="btn btn-info active" role="button">Logout</a>
                 {{/userName}}
-                {{^userName}} <!-- userName이 없으면 구글로그인 버튼 출력-->
+                {{^userName}} <!-- userName이 없으면 구글 로그인 버튼 출력-->
                     <a href="/oauth2/authorization/google" class="btn btn-success active"
                        role="button">Google Login</a>
                 {{/userName}}
