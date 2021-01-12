@@ -24,7 +24,7 @@ public class IndexControllerTest {
 
         // then
         // index.mustache에 "첫 스프링부트로 시작하는 웹 서비스"가 포함되어 있는지 확인한다.
-        assertThat(body).contains("첫 스프링부트로 시작하는 웹 서비스");
+        assertThat(body).contains("스프링부트로 시작하는 첫 웹 서비스");
     }
 
 }
