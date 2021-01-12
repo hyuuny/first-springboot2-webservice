@@ -3,8 +3,10 @@ package com.setge.boot.springboot.web.config.auth.dto;
 import com.setge.boot.springboot.web.domain.user.User;
 import lombok.Getter;
 
+import java.io.Serializable;
+
 @Getter
-public class SessionUser { // 인증된 사용자의 정보만 필요한 SessionUser 클래스
+public class SessionUser implements Serializable { // 인증된 사용자의 정보만 필요한 SessionUser 클래스
 
     private String name;
     private String email;
